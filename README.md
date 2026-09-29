@@ -51,8 +51,17 @@ Manage it with:
 omarchy plugin list
 omarchy plugin update hshindys.medkit
 omarchy plugin disable hshindys.medkit
+```
+
+## Remove
+
+```sh
 omarchy plugin remove hshindys.medkit
 ```
+
+This deletes the git checkout under `~/.config/omarchy/plugins/` and unloads
+the widget from the bar. It touches nothing else — MedKit itself, its data
+(`~/.local/share/medkit/`) and its systemd units stay installed.
 
 ## Files
 
@@ -60,6 +69,7 @@ omarchy plugin remove hshindys.medkit
 |---|---|
 | `manifest.json` | Omarchy plugin manifest (id `hshindys.medkit`) |
 | `MedKitBar.qml` | the bar widget |
+| `LICENSE` | MIT |
 
 ## Versioning
 
